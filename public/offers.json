@@ -1,0 +1,62 @@
+[
+  {
+    "id": "6181404400dc10984b110e0a",
+    "title": "Sundarban 2 Days 1 Night Tour Package",
+    "prie": "4500",
+    "img": "https://media-cdn.tripadvisor.com/media/photo-s/12/9b/09/8a/sundarban-beauty.jpg",
+    "description": "We are providing the Dhaka-Sundarban-Dhaka tour package for 2 days and 1 night. The package will include a delicious breakfast, lunch, and dinner. Sundarban tourism guide with wide experience will be always for you.",
+    "duration": "2 Days 1 Night",
+    "departure": "Dhaka",
+    "destination": "Sundarban"
+  },
+  {
+    "id": "61814044d5448942b8d70116",
+    "title": "3 Day 2 Night Dhaka to Cox's Bazar Tour with Air Ticket",
+    "prie": "15500",
+    "img": "https://sgp1.digitaloceanspaces.com/cosmosgroup/news/7725621_New%20Project%20(4).jpg",
+    "description": "Dhaka - Cox's Bazar 3 days 2 nights travel package. Package includes Dhaka – Cox’s Bazar – Dhaka by Air tickets. 2 nights twin accommodation at the hotel. A breakfast facility will be provided at the hotel.",
+    "duration": "2 Nights 3 Days",
+    "departure": "Dhaka",
+    "destination": "Cox's Bazar"
+  },
+  {
+    "id": "618140446fd6c65ad09c2aba",
+    "title": "4 Days & 3 Nights Tour Package at Kathmandu Nepal",
+    "prie": "32000",
+    "img": "https://img.traveltriangle.com/blog/wp-content/uploads/2020/02/cover-image-of-Nepal-In-October_20th-feb.jpg",
+    "description": "Excellent Kathmandu tour package in Nepal for 4 days and 3 nights including tax, breakfast, guide sevice. Parking and road tolls are included in this package.",
+    "duration": "4 Days and 3 Nights",
+    "departure": "Dhaka",
+    "destination": "Kathmandu"
+  },
+  {
+    "id": "6181404444d61c86e6dcc383",
+    "title": "Turkey Tour Package Istanbul-Bursa-Cappadocia-Antalya",
+    "prie": "165000",
+    "img": "https://www.travelshopturkey.com/images/destinations/N64VH41587212582.jpg",
+    "description": "In the first 4 days, visitors from Istanbul will visit the museums and all the tickets will be included in this package, Cappadocia will also visit the place. Parking and road tolls are included in this package.",
+    "duration": "9 Days 8 Nights",
+    "departure": "Dhaka",
+    "destination": "Istanbul"
+  },
+  {
+    "id": "61814044cdf4b2782500ff30",
+    "title": "Maldives Paradise Island Resort 4 Days 3 Nights",
+    "prie": "94000",
+    "img": "https://imgcld.yatra.com/ytimages/image/upload/t_holidays_srplist_desktop_hc/v1502260533/Fun_Island_Resort_and_Spa.jpg",
+    "description": "Maldives Paradise Island Resort 4 days 3 nights tour package has 3 nights in 3 star beach view hotel, full day trip to Paradise Island Resort, Male city tour by boat and walk, everyday breakfast in hotel.",
+    "duration": "4 Days 3 Nights",
+    "departure": "Dhaka",
+    "destination": "Maldive"
+  },
+  {
+    "id": "61814044d0a667c9846415a0",
+    "title": "2 Nights 3 Days Sylhet Tour Package",
+    "prie": "5999",
+    "img": "https://dailyasianage.com/library/2017/10/18/1508352216_6.jpg",
+    "description": "Package includes hotel accommodation, 3 times foods, pick and drop from hotel, visit Ratargul / Sada Pathor / Two Majar and other tourism place in the city, 3 times tea with evening snacks",
+    "duration": "2 Nights 3 Days",
+    "departure": "Dhaka",
+    "destination": "Sylhet"
+  }
+]
