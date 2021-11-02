@@ -5,7 +5,7 @@ import logo from '../../images/logo.png';
 
 const Header = () => {
     return (
-        <Navbar sticky="top" className="shadow" collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar sticky="top" className="shadow-sm" variant="light" bg="white" collapseOnSelect expand="lg">
             <Container>
                 <Navbar.Brand className="d-flex align-items-center">
                     <img src={logo}
