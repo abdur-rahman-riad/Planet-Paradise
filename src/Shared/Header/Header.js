@@ -5,7 +5,7 @@ import logo from '../../images/logo.png';
 
 const Header = () => {
     return (
-        <Navbar sticky="top" collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar sticky="top" className="shadow" collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
                 <Navbar.Brand className="d-flex align-items-center">
                     <img src={logo}
@@ -13,7 +13,7 @@ const Header = () => {
                         height="70"
                         alt="Site Logo"
                     />
-                    <h3 className="fw-bold mt-3">Planet Paradise</h3>
+                    <h3 className="fw-bold mt-2">Planet Paradise</h3>
                 </Navbar.Brand>
 
                 <Navbar.Toggle />
