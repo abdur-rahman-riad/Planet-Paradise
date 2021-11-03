@@ -5,7 +5,7 @@ import './Banner.css';
 const Banner = () => {
     return (
         <div className="custom-bg">
-            <div className="container py-3">
+            <div className="container py-5">
                 <div className="row align-items-center py-4">
                     <div className="col-md-6">
                         <h2 className="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>

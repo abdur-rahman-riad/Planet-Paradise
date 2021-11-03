@@ -8,7 +8,7 @@ const Login = () => {
             <div className="login-card">
                 <h2 className="fw-bold">Please Sign In</h2>
                 <img src={loginImg} alt="Loading Login Banner" />
-                <button className="btn btn-dark">Google Sign In</button>
+                <button className="btn btn-dark google">Google Sign In</button>
             </div>
         </div>
     );

@@ -2,14 +2,16 @@ import React from 'react';
 import './Home.css';
 import Banner from '../Banner/Banner';
 import Offerings from '../Offerings/Offerings';
+import TravelArrange from '../TravelArrange/TravelArrange';
+import Category from '../Category/Category';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <hr />
             <Offerings></Offerings>
-            <hr />
+            <TravelArrange></TravelArrange>
+            <Category></Category>
         </div>
     );
 };

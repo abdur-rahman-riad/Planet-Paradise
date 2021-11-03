@@ -13,7 +13,7 @@ const Offerings = () => {
 
 
     return (
-        <div className="container my-5">
+        <div className="container my-5 py-5">
             <h3 className="fw-bold text-center text-success">Our Offerings</h3>
 
             <div className="row g-4">
