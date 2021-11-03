@@ -1,0 +1,6 @@
+.package-card img{
+    height: 210px;
+}
+.package-card .card-text{
+    text-align: justify;
+}

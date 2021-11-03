@@ -20,11 +20,10 @@ const Header = () => {
 
                 <Navbar.Collapse className="justify-content-end">
                     <Nav.Link as={Link} className="fw-bold text-dark" to="/home">Home</Nav.Link>
-                    <Nav.Link as={Link} className="fw-bold text-dark" to="/home">My Orders</Nav.Link>
-                    <Nav.Link as={Link} className="fw-bold text-dark" to="/home">Manage Orders</Nav.Link>
-                    <Nav.Link as={Link} className="fw-bold text-dark" to="/home">Add Service</Nav.Link>
+                    <Nav.Link as={Link} className="fw-bold text-dark" to="/myorders">My Orders</Nav.Link>
+                    <Nav.Link as={Link} className="fw-bold text-dark" to="/manageorders">Manage Orders</Nav.Link>
+                    <Nav.Link as={Link} className="fw-bold text-dark" to="/addorders">Add Service</Nav.Link>
                     <Nav.Link as={Link} className="fw-bold text-dark" to="/login">Login</Nav.Link>
-                    <Nav.Link as={Link} className="fw-bold text-dark" to="/login">Logout</Nav.Link>
 
                     <Navbar.Text className="fw-bold text-danger">
                         Riad Rahman

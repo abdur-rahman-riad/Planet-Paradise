@@ -1,0 +1,22 @@
+.login-card{
+    width: 380px;
+    margin:35px auto;
+    padding:45px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+.login-card img{
+    width: 75%;
+    margin: 25px 0;
+}
+
+.login-card button{
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-card{
+        width: 100%;
+    }
+  }
