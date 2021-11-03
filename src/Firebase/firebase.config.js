@@ -8,14 +8,3 @@ const firebaseConfig = {
 };
 
 export default firebaseConfig;
-
-
-// const firebaseConfig = {
-//     apiKey: "AIzaSyDwAcq69Uuyt0CtlVVqjXmDEtE73d0XK9c",
-//     authDomain: "planet-paradise.firebaseapp.com",
-//     projectId: "planet-paradise",
-//     storageBucket: "planet-paradise.appspot.com",
-//     messagingSenderId: "1017579645663",
-//     appId: "1:1017579645663:web:e42ead541a2557c586576a"
-// };
-// export default firebaseConfig;
