@@ -14,7 +14,7 @@ const Offerings = () => {
 
     return (
         <div className="container my-5 py-5">
-            <h3 className="fw-bold text-center text-success">Our Offerings</h3>
+            <h3 className="fw-bold text-center text-success">Tour Package we Offers</h3>
 
             <div className="row g-4">
                 {

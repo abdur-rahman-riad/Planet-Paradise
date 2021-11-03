@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Offers.css'
 
 const Offers = (props) => {
@@ -21,7 +22,9 @@ const Offers = (props) => {
                     </div>
                     <div className="card-footer d-flex align-items-center justify-content-between">
                         <h3 className="fw-bold">{price} tk</h3>
-                        <button className="btn btn-dark">Book Now</button>
+                        <Link to={`/booking/${id}`}>
+                            <button className="btn btn-dark">Book Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>
