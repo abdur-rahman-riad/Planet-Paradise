@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
 
@@ -19,11 +19,17 @@ const Header = () => {
                 <Navbar.Toggle />
 
                 <Navbar.Collapse className="justify-content-end">
-                    <Nav.Link as={Link} className="fw-bold text-dark" to="/home">Home</Nav.Link>
-                    <Nav.Link as={Link} className="fw-bold text-dark" to="/myorders">My Orders</Nav.Link>
-                    <Nav.Link as={Link} className="fw-bold text-dark" to="/manageorders">Manage Orders</Nav.Link>
-                    <Nav.Link as={Link} className="fw-bold text-dark" to="/addorders">Add Service</Nav.Link>
-                    <Nav.Link as={Link} className="fw-bold text-dark" to="/login">Login</Nav.Link>
+                    <Nav.Link as={Link} className="fw-bold text-primary" to="/home">Home</Nav.Link>
+
+                    {/* <Nav.Link as={Link} className="fw-bold text-dark" to="/login">Login</Nav.Link> */}
+
+                    <NavDropdown className="fw-bold" title="Features" id="basic-nav-dropdown">
+                        <NavDropdown.Item as={Link} to="/myOrders">My Orders</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/manageOrders">Manage All Orders</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/addOrders">Add Orders</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item as={Link} to="/logout">Logout</NavDropdown.Item>
+                    </NavDropdown>
 
                     <Navbar.Text className="text-secondary">
                         Riad Rahman
