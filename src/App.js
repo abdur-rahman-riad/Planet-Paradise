@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
+import Footer from './Shared/Footer/Footer';
 import Header from './Shared/Header/Header';
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
           </Route>
 
         </Switch>
+
+        <Footer></Footer>
       </Router>
     </div>
   );

@@ -13,7 +13,7 @@ const Header = () => {
                         height="70"
                         alt="Site Logo"
                     />
-                    <h3 className="fw-bold mt-2">Planet Paradise</h3>
+                    <h3 className="fw-bold mt-2 text-success">Planet Paradise</h3>
                 </Navbar.Brand>
 
                 <Navbar.Toggle />
@@ -25,7 +25,7 @@ const Header = () => {
                     <Nav.Link as={Link} className="fw-bold text-dark" to="/addorders">Add Service</Nav.Link>
                     <Nav.Link as={Link} className="fw-bold text-dark" to="/login">Login</Nav.Link>
 
-                    <Navbar.Text className="fw-bold text-danger">
+                    <Navbar.Text className="text-secondary">
                         Riad Rahman
                     </Navbar.Text>
                 </Navbar.Collapse>

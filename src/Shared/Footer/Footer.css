@@ -1,0 +1,9 @@
+.custom-list li{
+    list-style: none;
+}
+.custom-list h5{
+    font-weight: 600;
+}
+.footer-name{
+    font-weight: 600;
+}
