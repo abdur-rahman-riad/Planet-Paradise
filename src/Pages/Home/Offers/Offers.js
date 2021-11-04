@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Offers.css'
 
 const Offers = (props) => {
-    const { id, title, price, img, description, duration, departure, destination } = props.offers;
+    const { _id, title, price, img, description, duration, departure, destination } = props.offers;
 
 
     return (
@@ -22,7 +22,7 @@ const Offers = (props) => {
                     </div>
                     <div className="card-footer d-flex align-items-center justify-content-between">
                         <h3 className="fw-bold">{price} tk</h3>
-                        <Link to={`/booking/${id}`}>
+                        <Link to={`/booking/${_id}`}>
                             <button className="btn btn-dark">Book Now</button>
                         </Link>
                     </div>

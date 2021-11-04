@@ -10,12 +10,12 @@ const Booking = () => {
     const [bookingInfo, setBookingInfo] = useState([]);
 
     useEffect(() => {
-        fetch('/offers.json')
+        fetch('https://polar-hollows-28101.herokuapp.com/tourpackages')
             .then(response => response.json())
             .then(data => setBookingInfo(data));
     }, []);
 
-    const bookingPackage = bookingInfo.find((tourPackage) => tourPackage.id === id);
+    const bookingPackage = bookingInfo.find((tourPackage) => tourPackage._id === id);
     // console.log(bookingInfo);
 
 
@@ -26,6 +26,7 @@ const Booking = () => {
             <div className="row g-5 py-3">
                 <div className="col-md-6">
                     <img src={bookingPackage?.img} className="img-fluid img-thumbnail" width="100%" alt="Package Banner" />
+                    <h1>{bookingPackage?.id}</h1>
                     <h4 className="fw-bold mt-3">{bookingPackage?.title}</h4>
                     <p className="package-description">{bookingPackage?.description}</p>
                     <h3 className="fw-bold text-primary">{bookingPackage?.price} tk</h3>

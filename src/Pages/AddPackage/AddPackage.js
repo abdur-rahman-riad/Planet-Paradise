@@ -4,15 +4,16 @@ import { useForm } from "react-hook-form";
 import './AddPackage.css';
 
 const AddPackage = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post("http://localhost:5000/tourpackages", data)
+        axios.post("https://polar-hollows-28101.herokuapp.com/tourpackages", data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("New Tour Package Successfully Added");
 
                     // RESET FORM
+                    reset();
                 }
             })
     };

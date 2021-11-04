@@ -6,7 +6,7 @@ const Offerings = () => {
     const [offerings, setOfferings] = useState([]);
 
     useEffect(() => {
-        fetch('/offers.json')
+        fetch('https://polar-hollows-28101.herokuapp.com/tourpackages')
             .then(response => response.json())
             .then(data => setOfferings(data))
     }, [])
@@ -19,7 +19,7 @@ const Offerings = () => {
             <div className="row g-4">
                 {
                     offerings.map(offers => <Offers
-                        key={offers.id}
+                        key={offers._id}
                         offers={offers}
                     ></Offers>)
                 }
