@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className="bg-light text-dark">
+        <div className="bg-light text-dark custom-footer">
             <div className="container pt-5">
                 <div className="row">
                     <div className="col-md-4 text-center">
@@ -29,7 +29,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr />
-                <p className="text-center text-secondary">CopyRight &copy; 2021 All Right Reserved Planet Paradise</p>
+                <p className="text-center text-secondary pb-2">CopyRight &copy; 2021 All Right Reserved Planet Paradise</p>
             </div>
         </div>
     );

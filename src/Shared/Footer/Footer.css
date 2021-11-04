@@ -7,3 +7,7 @@
 .footer-name{
     font-weight: 600;
 }
+
+.custom-footer{
+    margin-bottom: -18px;
+}

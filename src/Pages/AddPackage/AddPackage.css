@@ -1,0 +1,10 @@
+.addPackage-design{
+    width: 65%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .addPackage-design{
+        width: 100%;
+    }
+}
