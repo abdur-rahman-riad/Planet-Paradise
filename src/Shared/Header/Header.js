@@ -25,8 +25,8 @@ const Header = () => {
 
                     {user?.email ?
                         <NavDropdown className="fw-bold" title="Features" id="basic-nav-dropdown">
-                            <NavDropdown.Item as={Link} to="/myBookings">My Bookings</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/manageBookings">Manage All Bookings</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/myBooking">My Bookings</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/manageBooking">Manage All Bookings</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/addPackage">Add Tour Package</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item onClick={logOut}>Logout</NavDropdown.Item>

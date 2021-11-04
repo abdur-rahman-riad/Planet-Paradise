@@ -1,22 +1,38 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import { useForm } from "react-hook-form";
 import './Booking.css';
 
 const Booking = () => {
     const { id } = useParams();
     const { user } = useAuth();
     const [bookingInfo, setBookingInfo] = useState([]);
+    // const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     useEffect(() => {
+        // https://polar-hollows-28101.herokuapp.com/
         fetch('https://polar-hollows-28101.herokuapp.com/tourpackages')
             .then(response => response.json())
             .then(data => setBookingInfo(data));
     }, []);
-
     const bookingPackage = bookingInfo.find((tourPackage) => tourPackage._id === id);
-    // console.log(bookingInfo);
+
+    const onSubmit = data => {
+        const key = bookingPackage._id;
+        data.key = key;
+        axios.post("https://polar-hollows-28101.herokuapp.com/bookings", data)
+            .then(res => {
+                if (res.data.insertedId) {
+                    // alert("Booking Confirmed Successfully");
+                    // RESET FORM
+                    reset();
+                }
+            })
+    };
 
 
     return (
@@ -26,7 +42,6 @@ const Booking = () => {
             <div className="row g-5 py-3">
                 <div className="col-md-6">
                     <img src={bookingPackage?.img} className="img-fluid img-thumbnail" width="100%" alt="Package Banner" />
-                    <h1>{bookingPackage?.id}</h1>
                     <h4 className="fw-bold mt-3">{bookingPackage?.title}</h4>
                     <p className="package-description">{bookingPackage?.description}</p>
                     <h3 className="fw-bold text-primary">{bookingPackage?.price} tk</h3>
@@ -36,40 +51,73 @@ const Booking = () => {
                 </div>
 
                 <div className="col-md-6">
-                    <form action="">
+
+                    <form onSubmit={handleSubmit(onSubmit)}>
+
 
                         <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="name" placeholder="Name" value={user?.displayName} required />
-                            <label for="name">Name</label>
+                            <input
+                                {...register("userName")}
+                                defaultValue={user?.displayName}
+                                type="text"
+                                class="form-control"
+                                id="userName"
+                                placeholder="Name"
+                                readOnly />
+                            <label for="userName">Name</label>
                         </div>
 
                         <div class="form-floating mb-2">
-                            <input type="email" class="form-control" id="email" placeholder="Email" value={user?.email} required />
-                            <label for="email">Email</label>
+                            <input
+                                {...register("userEmail")}
+                                defaultValue={user?.email}
+                                type="email"
+                                class="form-control"
+                                id="userEmail"
+                                placeholder="Email"
+                                readOnly />
+                            <label for="userEmail">Email</label>
+                        </div>
+
+                        {bookingPackage?.title &&
+                            <div class="form-floating mb-2">
+                                <input
+                                    {...register("packageName")}
+                                    defaultValue={bookingPackage?.title}
+                                    type="text"
+                                    class="form-control"
+                                    id="packageName"
+                                    placeholder="Package Name"
+                                    readOnly />
+                                <label for="packageName">Package Name</label>
+                            </div>
+                        }
+
+                        <div class="form-floating mb-2">
+                            <input
+                                {...register("address")}
+                                type="text"
+                                class="form-control"
+                                id="address"
+                                placeholder="Address"
+                                required />
+                            <label for="address">Address</label>
                         </div>
 
                         <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="PackageName" placeholder="Package Name" value={bookingPackage?.title} required />
-                            <label for="PackageName">Package Name</label>
+                            <input
+                                {...register("phoneNumber")}
+                                type="number"
+                                class="form-control"
+                                id="phoneNumber"
+                                placeholder="Phone Number"
+                                required />
+                            <label for="phoneNumber">Phone Number</label>
                         </div>
 
-                        <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="PackagePrice" placeholder="Package Price" value={bookingPackage?.price} required />
-                            <label for="PackagePrice">Package Price</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="Address" placeholder="Address" required />
-                            <label for="Address">Address</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input type="number" class="form-control" id="phone" placeholder="Phone Number" required />
-                            <label for="phone">Phone Number</label>
-                        </div>
-
-                        <button className="btn btn-dark w-100">Confirm Booking</button>
+                        <input className="btn btn-dark w-100" type="submit" value="Confirm Booking" />
                     </form>
+
                 </div>
             </div>
 

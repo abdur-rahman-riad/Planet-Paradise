@@ -7,6 +7,7 @@ const AddPackage = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
+        // https://polar-hollows-28101.herokuapp.com/
         axios.post("https://polar-hollows-28101.herokuapp.com/tourpackages", data)
             .then(res => {
                 if (res.data.insertedId) {
