@@ -4,7 +4,7 @@ import AuthProvider from './context/AuthProvider';
 import AddPackage from './Pages/AddPackage/AddPackage';
 import AllBooking from './Pages/Booking/AllBooking/AllBooking';
 import Booking from './Pages/Booking/Booking/Booking';
-// import AllBooking from './Pages/Booking/MyBooking/AllBooking';
+import MyBooking from './Pages/Booking/MyBooking/MyBooking';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
@@ -43,6 +43,10 @@ function App() {
 
             <PrivateRoute path="/manageBooking">
               <AllBooking></AllBooking>
+            </PrivateRoute>
+
+            <PrivateRoute path="/myBooking">
+              <MyBooking></MyBooking>
             </PrivateRoute>
 
             <Route path="*">

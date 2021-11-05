@@ -10,7 +10,6 @@ const Booking = () => {
     const { id } = useParams();
     const { user } = useAuth();
     const [bookingInfo, setBookingInfo] = useState([]);
-    // const { register, handleSubmit } = useForm();
     const { register, handleSubmit, reset } = useForm();
 
     useEffect(() => {
@@ -23,11 +22,13 @@ const Booking = () => {
 
     const onSubmit = data => {
         const key = bookingPackage._id;
+        const status = "Pending...";
+        data.status = status;
         data.key = key;
         axios.post("https://polar-hollows-28101.herokuapp.com/bookings", data)
             .then(res => {
                 if (res.data.insertedId) {
-                    // alert("Booking Confirmed Successfully");
+                    alert("Booking Confirmed Successfully");
                     // RESET FORM
                     reset();
                 }
@@ -37,7 +38,7 @@ const Booking = () => {
 
     return (
         <div className="container my-3">
-            <h3 className="text-center py-3 fw-bold">Review and Confirm Your Booked Tour Package</h3>
+            <h3 className="text-center py-3 fw-bold fst-italic">Review and Confirm Your Booked Tour Package</h3>
 
             <div className="row g-5 py-3">
                 <div className="col-md-6">
@@ -92,6 +93,14 @@ const Booking = () => {
                                 <label for="packageName">Package Name</label>
                             </div>
                         }
+
+                        <div className="mb-2">
+                            <input
+                                className="form-control"
+                                {...register("date")}
+                                id="date"
+                                type="date" />
+                        </div>
 
                         <div class="form-floating mb-2">
                             <input

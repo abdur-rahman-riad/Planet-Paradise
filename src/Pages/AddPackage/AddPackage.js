@@ -7,7 +7,6 @@ const AddPackage = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        // https://polar-hollows-28101.herokuapp.com/
         axios.post("https://polar-hollows-28101.herokuapp.com/tourpackages", data)
             .then(res => {
                 if (res.data.insertedId) {
@@ -105,14 +104,6 @@ const AddPackage = () => {
                     </div>
 
                     <input className="btn btn-dark w-100" type="submit" value="Add Package" />
-
-                    {/* <input {...register("title")} placeholder="Package Name" />
-                    <input {...register("description")} placeholder="Short Description" />
-                    <input type="number" {...register("price")} placeholder="Package Price" />
-                    <input {...register("duration")} placeholder="Duration" />
-                    <input {...register("departure")} placeholder="Departure" />
-                    <input {...register("destination")} placeholder="Destination" />
-                    <input {...register("img")} placeholder="Image URL" /> */}
 
                 </form>
             </div>

@@ -14,7 +14,7 @@ const AllBooking = () => {
 
     return (
         <div className="container my-3">
-            <h3 className="fw-bold text-center text-success">Manage All Booking</h3>
+            <h3 className="fw-bold text-center text-success fst-italic mb-3">Manage All Booking</h3>
 
             <div className="row">
                 {

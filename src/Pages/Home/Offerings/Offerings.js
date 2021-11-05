@@ -6,7 +6,6 @@ const Offerings = () => {
     const [offerings, setOfferings] = useState([]);
 
     useEffect(() => {
-        // https://polar-hollows-28101.herokuapp.com/
         fetch('https://polar-hollows-28101.herokuapp.com/tourpackages')
             .then(response => response.json())
             .then(data => setOfferings(data))
