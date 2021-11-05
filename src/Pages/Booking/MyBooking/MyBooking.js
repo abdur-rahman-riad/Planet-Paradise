@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import MyBookingItem from '../MyBookingItem/MyBookingItem';
 
@@ -11,7 +12,7 @@ const MyBooking = () => {
         fetch(`https://polar-hollows-28101.herokuapp.com/bookings/${email}`)
             .then(res => res.json())
             .then(data => setMyBooking(data))
-    }, []);
+    }, [myBooking]);
 
 
     return (
@@ -24,6 +25,12 @@ const MyBooking = () => {
                         bookings={bookings}
                     ></MyBookingItem>)
                 }
+            </div>
+
+            <div className="text-center">
+                <Link to="/">
+                    <button className="btn btn-dark mt-5">Back to Home</button>
+                </Link>
             </div>
         </div>
     );

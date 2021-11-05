@@ -34,18 +34,18 @@ const MyBookingItem = (props) => {
         <div className="col-md-6">
             <div className="card mb-3 border shadow-sm">
                 <div className="row align-items-center">
-                    <div className="col-md-4 custom-mybooking">
+                    <div className="col-md-6 custom-mybooking">
                         <img src={userBooking?.img} className="img-fluid rounded-start" width="100%" alt="" />
                     </div>
 
-                    <div className="col-md-8 py-2 myBookingP">
+                    <div className="col-md-6 ps-0 py-2 myBookingP">
                         <h6 className="fw-bold">{packageName}</h6>
                         <h6 className="fw-bold text-secondary">{userBooking?.price} tk</h6>
                         <h6 className="text-secondary">{userBooking?.duration}</h6>
                         <h6 className="text-secondary">{userBooking?.departure} to {userBooking?.destination}</h6>
                         <div className="d-flex align-items-center status-design">
                             <button onClick={() => deleteMyBooking(_id)} className="cancel-btn">Cancel</button>
-                            <h5 className="text-primary fst-italic">{status}</h5>
+                            <p className="text-primary fst-italic">{status}</p>
                             {/* <h5 className="text-success fst-italic">Approved</h5> */}
                         </div>
                     </div>

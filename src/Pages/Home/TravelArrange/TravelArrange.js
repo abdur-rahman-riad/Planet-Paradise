@@ -13,14 +13,14 @@ const TravelArrange = () => {
 
             <div className="row g-4 align-items-center">
                 <div className="col-md-7">
-                    <div className="shadow-sm border p-3 rounded-3">
-                        <h4 className="fw-bold">We can be a great travel planner for you</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officiis beatae, doloremque aut sint blanditiis provident! Nemo nostrum saepe dolorem fugit ipsam, quis rem voluptatum libero, facilis maiores amet temporibus a beatae. Repellendus repudiandae commodi, odit, esse quidem, sed numquam optio harum dicta quaerat molestiae repellat quas voluptate molestias amet.</p>
+                    <div className="shadow-sm arrangmentP border p-3 rounded-3">
+                        <h4 className="fw-bold text-secondary fst-italic">We can be a great travel planner for you</h4>
+                        <p className="text-secondary">Before you can even begin to plan a trip, you need to take a good look at your finances and figure out how much money you have to spend on your adventure. This will dictate a lot of the future steps including where you can travel to and for how long. Don’t forget to do a little digging and make sure that the time of year you plan to travel is optimal. We have failed to do our research a few times and it ended up really affecting our trip.</p>
                     </div>
                     <br />
-                    <div className="shadow-sm border p-3 rounded-3">
-                        <h4 className="fw-bold">We guide you all over the world</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus deleniti, modi nisi, necessitatibus ratione voluptates minus maxime recusandae, sint velit consectetur ab pariatur in! Nobis officia est quos facere voluptatibus reprehenderit placeat minus, explicabo exercitationem, libero quae fuga! Nemo, maiores eligendi? Modi laudantium illum aspernatur at consequatur. Voluptas, molestiae.</p>
+                    <div className="shadow-sm arrangmentP border p-3 rounded-3">
+                        <h4 className="fw-bold text-secondary fst-italic">We guide you all over the world</h4>
+                        <p className="text-secondary">A comprehensive guide to the world’s best travel destinations, It covers all aspects, from cities to airports, cruise ports to ski and beach resorts, attractions to events. Great for those short on holiday ideas or those wanting to find out more about a country before visiting. The preparation of the itinerary for our round world tour. we remember this period with a lot of nostalgia, those evenings spent adding pins to our world map, dreaming, debating, making compromises and starting to sketch out our travel project.</p>
                     </div>
 
                     <button className="btn btn-dark mt-3">Discover More</button>

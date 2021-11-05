@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import BookingList from '../BookingList/BookingList';
 import './AllBooking.css';
 
 const AllBooking = () => {
     const [bookings, setBookings] = useState([]);
     useEffect(() => {
-        // https://polar-hollows-28101.herokuapp.com/
         fetch('https://polar-hollows-28101.herokuapp.com/bookings')
             .then(response => response.json())
             .then(data => setBookings(data))
-    }, []);
+    }, [bookings]);
 
 
     return (
@@ -23,6 +23,12 @@ const AllBooking = () => {
                         myBookings={myBookings}
                     ></BookingList>)
                 }
+            </div>
+
+            <div className="text-center">
+                <Link to="/">
+                    <button className="btn btn-dark mt-5">Back to Home</button>
+                </Link>
             </div>
         </div>
     );

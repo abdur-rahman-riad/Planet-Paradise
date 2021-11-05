@@ -21,7 +21,7 @@ const AddPackage = () => {
 
     return (
         <div className="container text-center my-2 py-2">
-            <h3 className="fw-bold text-success">Add a New Tour Package</h3>
+            <h3 className="fw-bold fst-italic text-success">Add a New Tour Package</h3>
 
             <div className="addPackage-design">
                 <form onSubmit={handleSubmit(onSubmit)}>

@@ -1,5 +1,5 @@
 .custom-mybooking img{
-    height: 165px;
+    height: 180px;
 }
 .myBookingP h6{
     margin: 3px;
@@ -13,6 +13,6 @@
     padding: 3px 10px;
     margin-right: 15px;
 }
-.status-design h5{
-    margin-top: 5px;
+.status-design p{
+    margin-top: 13px;
 }

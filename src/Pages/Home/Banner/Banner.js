@@ -7,9 +7,9 @@ const Banner = () => {
         <div className="custom-bg">
             <div className="container py-5">
                 <div className="row align-items-center py-4">
-                    <div className="col-md-6">
-                        <h2 className="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatibus culpa numquam recusandae accusamus doloremque amet, exercitationem nam minus corrupti maiores, impedit quam ipsam aperiam reprehenderit, corporis aut autem qui quaerat at laboriosam animi pariatur consequatur! Non voluptas quis iure, enim totam expedita temporibus possimus reiciendis similique repellat culpa dolor!</p>
+                    <div className="col-md-6 bannerP">
+                        <h2 className="fw-bold text-success fst-italic">The world is a book and those who do not travel read only one page.</h2>
+                        <p className="text-secondary">We offer a comprehensive range of travel packages to the needs of passengers traveling domestically, as well as traveling to and from international destinations. We provide the customers with various tools and information that they need to research, plan, book and purchase travel products and services in Bangladesh as well as outside Bangladesh.</p>
                         <button className="btn btn-dark">Explore Now</button>
                     </div>
 

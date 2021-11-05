@@ -24,7 +24,7 @@ const BookingList = (props) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        alert("Successfully Deleted Booking. Please Reload Page for Updated Status");
+                        alert("Successfully Deleted Booking.");
 
                     }
                 })
@@ -37,16 +37,17 @@ const BookingList = (props) => {
         <div className="col-md-6">
             <div className="card mb-3 border shadow-sm">
                 <div className="row align-items-center">
-                    <div className="col-md-5 custom-booking">
+                    <div className="col-md-6 custom-booking">
                         <img src={booking?.img} className="img-fluid rounded-start" width="100%" alt="" />
                     </div>
-                    <div className="col-md-7 py-2">
-                        <h5 className="fw-bold">{booking?.title}</h5>
-                        <h6 className="fw-bold text-secondary">Booking Date: {date}</h6>
+                    <div className="col-md-6 ps-0 py-2">
+                        <h6 className="fw-bold">{booking?.title}</h6>
+                        <h6>Booking Date: {date}</h6>
                         <h6>Booked By: {userName}</h6>
                         <h6>Address: {address}</h6>
                         <h6>Phone Number: {phoneNumber}</h6>
                         <button onClick={() => handleDeleteBooking(_id)} className="btn btn-danger me-2">Delete</button>
+                        <button className="btn btn-success">Approve</button>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ const Category = () => {
             <div className="category-title">
                 <p className="category-p">We suggest you the best tour collection</p>
                 <h2 className="fw-bold">Choose Your Favorite Tours</h2>
-                <p className="category-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime dolore ut modi neque numquam nulla, dignissimos aspernatur soluta maiores?</p>
+                <p className="category-p2 text-secondary">Whether you’re in the middle of planning a trip or just daydreaming about your next vacation, use this list of the world’s best travel experiences as a guide for creating an unforgettable getaway.</p>
             </div>
 
             <div className="row g-3">
